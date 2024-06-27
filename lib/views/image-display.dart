@@ -9,12 +9,16 @@ class ImageDispaly extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+        titleTextStyle: TextStyle(color: Colors.pink),
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 55),
         child: Column(
           children: [
             Container(
-              height: 250,
+              height: double.maxFinite,
               width: double.infinity,
               color: Colors.yellow,
               child: Image.network(
